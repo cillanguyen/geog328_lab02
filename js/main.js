@@ -2,7 +2,10 @@
 let icon = document.getElementsByClassName("icon")[0];
 
 // Add an event listener for the 'click' event on the icon element
-icon.addEventListener('click', responsive_control);
+icon.addEventListener('click', function() {
+  let x = document.getElementById("myTopnav");
+  x.classList.toggle("responsive");
+});
 
 // Function to control the responsiveness of the navigation bar
 function responsive_control() {
